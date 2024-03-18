@@ -1,0 +1,8 @@
+const fetch = require('node-fetch');
+const createAccountUrl = 'https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/createAccount';
+const accountDetails = {
+    name: 'Prachi',
+    email: 'prachi1025.be21@chitkara.edu.in',
+    rollNumber: 2110991025,
+    phone: '8288831582', 
+};
