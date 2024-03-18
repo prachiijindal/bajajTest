@@ -1,0 +1,16 @@
+const axios = require('axios');
+const apiUrl = 'https://customer-analytics-34146.my.salesforce-sites.com/services/apexrest/buyStocks';
+const rollNumber = '2110991025';
+const stockData = {
+  company: 'Bajaj Finserv',
+  currentPrice: 310.15, 
+  accountNumber: '21109914025', // Received from API 1
+  githubRepoLink: 'https://github.com/prachiijindal/bajajTest/tree/ea0befe43747014edfd09a9ca9f6f6e5ccdcaa58',
+};
+
+then((response) => {
+    console.log('Stocks bought successfully:', response.data);
+  })
+  .catch((error) => {
+    console.error('Error buying stocks:', error.message);
+  });
